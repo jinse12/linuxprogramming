@@ -1,12 +1,8 @@
 #변수 선언
 CX = g++                #C++ 컴파일러 이름
 CXFLAGS = -g -Wall      #-g: 디버그 모드, -Wall: 모든 경고 메시지 출력
-
-#오브젝트 파일 목록
-OBJS = main.o Complex.o ComplexManager.o
-
-#실행 파일
-TARGET = complex
+OBJS = main.o Complex.o ComplexManager.o #오브젝트 파일 목록
+TARGET = complex #실행 파일
 
 #실행 파일 링크 규칙
 $(TARGET): $(OBJS)
