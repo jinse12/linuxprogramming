@@ -1,5 +1,5 @@
 #include <iostream> //입출력 기능 사용을 위해 포함
-#include "Complex.hpp" //Complex.hpp 포함
+#include "complex.hpp" //complex.hpp 포함
 using namespace std; //std:: 생략
 
 //생성자 구현
