@@ -9,15 +9,6 @@ Complex::Complex(double r, double i) {
     cout << "복소수 " << real << " + " << img << "j 생성" << endl;
 }
 
-//프렌드 함수로 곱셈 연산자 구현
-//(a+bi)*(c+di)=(ac-bd)+(ad+bc)i
-Complex operator*(const Complex& a, const Complex& b) {
-    Complex tmp; //연산 결과를 저장할 임시 객체 생성
-    tmp.real = a.real * b.real - a.img * b.img; //실수부 계산
-    tmp.img  = a.real * b.img + a.img * b.real; //허수부 계산
-    return tmp; //계산 결과 반환
-}
-
 //프렌드 함수 전위 증가 연산자
 Complex& operator++(Complex& a) {
     ++a.real;
@@ -27,10 +18,10 @@ Complex& operator++(Complex& a) {
 
 //프렌드 함수 후위 감소 연산자
 Complex operator--(Complex& a, int) {
-    Complex tmp = a; //현재 상태 저장
+    Complex tmp = a; //감소 이전 객체 상태 저장
     a.real--; //실수부 감소
     a.img--;  //허수부 감소
-    return tmp; //변경 전 상태 반환
+    return tmp; //감소하기 이전의 객체 상태를 반환
 }
 
 //복소수 출력 함수
