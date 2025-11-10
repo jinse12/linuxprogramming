@@ -1,4 +1,4 @@
-#변수 선언
+#변수 선언 
 CX = g++ #C++ 컴파일러 이름
 CXFLAGS = -g -Wall #-g: 디버그용, -Wall: 모든 경고 출력
 OBJS = main.o book.o #오브젝트 파일 목록
