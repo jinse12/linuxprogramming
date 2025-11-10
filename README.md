@@ -1,2 +1,2 @@
 # linuxprogramming
-실습과제
+실습과제s
