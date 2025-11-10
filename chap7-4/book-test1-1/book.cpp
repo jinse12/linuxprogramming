@@ -1,5 +1,5 @@
 #include <iostream> //입출력 사용을 위해 포함
-#include "book.hpp" //Book 클래스의 선언 포함
+#include "book.hpp" //Book 클래스의 선언 포함 
 
 //생성자 구현
 Book::Book(string title, int price, int page) {
