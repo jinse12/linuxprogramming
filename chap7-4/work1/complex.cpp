@@ -1,15 +1,15 @@
-#include <iostream> //표준 입출력 사용을 위한 헤더 포함
+#include <iostream> //입출력 사용을 위한 헤더 포함
 #include "complex.hpp" //complex 클래스 헤더 포함
 using namespace std; //std:: 생략
 
-// 생성자 구현
+//생성자 구현
 Complex::Complex(double r, double i) {
     real = r;
     img = i;
     cout << "복소수" << real << "+" << img << "j생성" << endl;
 }
 
-// 복소수 곱셈 연산자 오버로딩
+//복소수 곱셈 연산자 오버로딩
 Complex Complex::operator*(Complex a) {
     Complex tmp; //연산 결과를 저장할 임시 객체
     tmp.real = this->real * a.real - this->img * a.img; //실수부 계산
