@@ -1,4 +1,4 @@
-#ifndef COMPLEX_HPP //중복 포함 방지
+#ifndef COMPLEX_HPP //중복 포함 방지 
 #define COMPLEX_HPP
 
 //Complex 클래스 정의
