@@ -1,25 +1,23 @@
-#ifndef COMPLEX_HPP
+#ifndef COMPLEX_HPP //중복 포함 방지
 #define COMPLEX_HPP
 
+//Complex 클래스 정의
 class Complex {
 private:
-    double real;  // 실수부
-    double img;   // 허수부
+    double real;  // 실수부 변수
+    double img;   // 허수부 변수
 
 public:
-    // 생성자
+    // 생성자 (기본값을 0으로
     Complex(double r = 0, double i = 0);
 
-    // 연산자 오버로딩 (멤버 함수)
-    Complex operator*(Complex a); // 곱셈
-    Complex& operator++();        // 전위 증가 (++x)
-    Complex operator--(int);      // 후위 감소 (x--)
+    // 연산자 오버로딩 (멤버 함수로 구현)
+    Complex operator*(Complex a); // 복소수 곱셈 연산자
+    Complex& operator++();        // 전위 증가 연산자(++x)
+    Complex operator--(int);      // 후위 감소 연산자(x--)
 
-    // 출력 함수
+    // 복소수 출력 함수
     void show();
-
-    // 생성 메시지 출력용 함수 (optional)
-    void printCreate();
 };
 
 #endi
