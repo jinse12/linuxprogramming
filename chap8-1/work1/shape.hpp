@@ -4,15 +4,15 @@
 #include <iostream> //입출력 사용을 위해 포함
 using namespace std;//std:: 생략
 
-//Shape 기본 클래스 선언
+//자식 클래스에서 사용할 공통기능을 Shape 클래스에 선언
 class Shape {
-private:                      //setXY(), getX(), getY() 멤버를 통해 접근 가능
+private:                      //파생 클래스에서는 private에 직접 접근이 불가능하여 set, get멤버로 private에 접근한다. 미국스타일
     int x, y;                 //x, y를 private 멤버로 선언 
 public:
     Shape();                  //기본 생성자
     void setXY(int x, int y); //좌표 설정
 protected:
-    int getX() const;         //파생 클래스에서 사용할 수 있는 getter
+    int getX() const;
     int getY() const;
 };
 
