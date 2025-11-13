@@ -1,6 +1,6 @@
 #include <iostream>   //입출력을 사용하기 위해 포함
 #include "shape.hpp"  //Shape, Circle, Rect, Triangle 클래스의 선언을 포함
-using namespace std;
+using namespace std;  //std: 생략
 
 int main() {
     Circle x;      //원 객체
