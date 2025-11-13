@@ -10,7 +10,7 @@ void Shape::setXY(int x, int y) {
     this->y = y;
 }
 
-//getter (파생 클래스에서 사용)
+//파생클래스에서 사용하는 getter 함수
 int Shape::getX() const { return x; }
 int Shape::getY() const { return y; }
 
@@ -21,7 +21,7 @@ void Circle::setCircle(int x, int y, int r) {
     radius = r;
 }
 
-void Circle::show() const { //출력 메시지
+void Circle::show() const { //Circle 클래스의 출력 메시지 생성
     cout << "좌표 (" << getX() << "," << getY() << ")에 반지름 "
          << radius << "인 원" << endl;
 }
@@ -34,7 +34,7 @@ void Rect::setRect(int x, int y, int w, int h) {
     height = h;
 }
 
-void Rect::show() const {
+void Rect::show() const { //Rect 클래스의 출력 메시지 생성
     cout << "좌표 (" << getX() << "," << getY() << ")에 폭 "
          << width << ", 높이 " << height << "인 직사각형" << endl;
 }
@@ -47,7 +47,7 @@ void Triangle::setTriangle(int x, int y, int b, int h) {
     height = h;
 }
 
-void Triangle::show() const {
+void Triangle::show() const { //Triangle 클래스의 출력 메시지 생성
     cout << "좌표 (" << getX() << "," << getY() << ")에 밑변 "
          << base << ", 높이 " << height << "인 삼각형" << endl;
 }
