@@ -6,8 +6,8 @@ Shape::Shape() : x(0), y(0) {}
 
 //좌표 설정 함수
 void Shape::setXY(int x, int y) {
-    this->x = x;
-    this->y = y;
+    this->x = x; //객체의 멤버변수 x에 매개변수 x의 값을 대입
+    this->y = y; //객체의 멤버변수 y에 매개변수 y의 값을 대입
 }
 
 //파생클래스에서 사용하는 getter 함수
