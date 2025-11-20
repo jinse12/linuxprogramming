@@ -3,7 +3,6 @@
 // 날짜: 2025년 11월 20일
 // 작성자: 2001178 김진세
 //********************************************
-
 #include <iostream> //입출력 사용을 위해 포함
 using namespace std;//std:: 생략
 
@@ -25,9 +24,9 @@ int main() {
     char c[3] = {'a', 'x', 'p'}; //문자형 배열
 
     //getmax 함수의 자료형에 일치하는 매개변수를 화면에 출력한다
-    cout << "정수 배열의 최대값은 " << getmax(a, 5) << endl; //int 배열 a에서 최대값 계산
-    cout << "실수 배열의 최대값은 " << getmax(b, 4) << endl; //double 배열 b에서 최대값 계산
-    cout << "문자 배열의 최대값은 " << getmax(c, 3) << endl; //char 배열 c에서 최대값 계산
+    cout << "정수 배열의 최대값은 " << getmax<int>(a, 5) << endl; //int 배열 a에서 최대값 계산
+    cout << "실수 배열의 최대값은 " << getmax<double>(b, 4) << endl; //double 배열 b에서 최대값 계산
+    cout << "문자 배열의 최대값은 " << getmax<char>(c, 3) << endl; //char 배열 c에서 최대값 계산
 
     return 0;
 }
