@@ -8,7 +8,7 @@ using namespace std;//std:: 생략
 
 //템플릿 함수 정의
 template <class T> //자료형을 템플릿 매개변수로 선언
-T getmax(T data[], int n) { //최대값을 구할 배열 data에서 n개의 원소를 합한 결과를 리턴하는 함수
+T getmax(T data[], int n) { //최대값을 구할 배열 data에서 n개의 원소를 합한 결과를 반환하는 함수
     T max = data[0];            //배열의 첫 번째 원소를 최대값으로 초기화
     for (int i = 1; i < n; i++) {
         if (data[i] > max) {
