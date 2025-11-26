@@ -3,6 +3,7 @@
 // 날짜: 2025년 11월 25일
 // 작성자: 2001178 김진세
 //******************************************************
+
 #include <iostream> //입출력 사용을 위해 포함
 using namespace std; //std:: 생략을 위해 사용
 
@@ -21,18 +22,18 @@ public:
 //생성자 정의. 객체가 생성될 때 data1, data2를 0으로 초기화
 template <class T1, class T2>
 GClass<T1, T2>::GClass() {
-    data1 = 0; 
+    data1 = 0;
     data2 = 0;
 }
 
-//값 설정. 외부에서 전달된 a,b 값을 각각 data1, data2에 저장
+//값 설정. 외부에서 전달된 a,b,c,d 값을 각각 data1, data2에 저장
 template <class T1, class T2>
 void GClass<T1, T2>::set(T1 a, T2 b) {
     data1 = a;
     data2 = b;
 }
 
-//값을 참조로 반환. a,b에 data1,data2를 복사해서 전달
+//값을 참조로 반환. a,b,c,d에 data1,data2를 복사해서 전달
 template <class T1, class T2>
 void GClass<T1, T2>::get(T1& a, T2& b) {
     a = data1;
@@ -48,7 +49,7 @@ void GClass<T1, T2>::swap() {
 }
 
 int main() {
-    int a, b;
+    int a, b; //변수 선언
     GClass<int, int> x; //int 타입 매개변수로 템플릿이 만들어짐
     x.set(2, 5); //값 저장
     x.get(a, b); //값 출력
@@ -57,4 +58,16 @@ int main() {
     x.swap();    //값 교환
     x.get(a, b); //교환된 값 출력
     cout << "a=" << a << '\t' << "b=" << b << endl;
+
+    double c, d; //변수 선언
+    GClass<double, double> y; //double 타입 매개변수로 템플릿 생성
+    y.set(3.14, 6.28); //값 저장
+    y.get(c, d);       //값 출력
+    cout << "c=" << c << '\t' << "d=" << d << endl;
+
+    y.swap();          //값 교환
+    y.get(c, d);       //교환된 값 출력
+    cout << "c=" << c << '\t' << "d=" << d << endl;
+
+    return 0;
 }
