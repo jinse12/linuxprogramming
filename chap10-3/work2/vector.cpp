@@ -4,7 +4,6 @@
 // 작성자: 2001178 김진세
 //******************************************************
 
-
 #include <iostream> //입출력 사용을 위해 포함
 #include <vector>   //vector 헤더파일 포함
 using namespace std; //std:: 생략을 위해 사용
