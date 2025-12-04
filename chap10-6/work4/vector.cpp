@@ -22,7 +22,7 @@ int main() {
     cout << "수정행렬" << endl;
     for (int i = 0; i < matrix.size(); i++) {
         for (int j = 0; j < matrix[i].size(); j++) {
-            cout << matrix[i][j] << " ";
+            cout << matrix[i][j] << '\t';
         }
         cout << endl;
     }
