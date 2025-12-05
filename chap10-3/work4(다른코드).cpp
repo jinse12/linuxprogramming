@@ -40,7 +40,7 @@ int main() {
     }
     double avg = sum / number.size();
 
-    cout << "평균값 : " << avg << endl;
+    cout << "ㅍㄱ: " << avg << endl;
 
     return 0;
 }
